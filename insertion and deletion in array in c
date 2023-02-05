@@ -1,0 +1,15 @@
+int insert(int arr[],int size,int key,int pos){
+    for(int i=size;i!=pos;i--){
+        arr[i+1]=arr[i];
+    }size++;
+    arr[pos]=key;
+}
+
+
+
+int delete(int arr[],int size,int key,int pos){
+    for(int i=pos;i<size;i++){
+        arr[i]=arr[i+1];
+    }size--;
+    
+}
